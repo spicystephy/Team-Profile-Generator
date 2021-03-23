@@ -31,14 +31,14 @@ function teamMember() {
     },
     {
       type: "list",
-      message: "Do you want to add another employee?",
+      message: "Do you want to add another team member?",
       name: "add",
       choices: ["yes", "no"],
     },
   ])
   //function that will start over if yes chosen, otherwise generate profile
-  .then
   
+
 }
 
 //   .then((data) => {

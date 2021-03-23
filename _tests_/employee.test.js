@@ -1,6 +1,6 @@
-// const { test, expect } = require("@jest/globals")
-// const { describe } = require("yargs")
-const Employee = require("../lib/employee")
+const { test, expect } = require("@jest/globals")
+const { describe } = require("yargs")
+const Employee = require("../lib/Employee")
 
 describe("Emploee", () => {
     describe("Intialization", () => {
