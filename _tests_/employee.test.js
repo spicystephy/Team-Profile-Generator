@@ -1,12 +1,12 @@
-const { test, expect } = require("@jest/globals")
-const { describe } = require("yargs")
+// const { test, expect } = require("@jest/globals")
+// const { describe } = require("yargs")
 const Employee = require("../lib/employee")
 
 describe("Emploee", () => {
     describe("Intialization", () => {
         test("Can intialize an employee object", () => {
             const e = new Employee();
-            
+
             expect(typeof e).toBe("object");
         });
         test("Can set name attribute with constuctor", () => {
