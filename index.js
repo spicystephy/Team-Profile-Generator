@@ -5,8 +5,8 @@ const Engineer = require("./lib/Engineer");
 const Intern = require("./lib/Intern");
 const Manager = require("./lib/Manager");
 
+const employees = [];
 function teamMember() {
-  //
   inquirer.prompt([
     {
       type: "input",
@@ -36,7 +36,24 @@ function teamMember() {
       choices: ["yes", "no"],
     },
   ])
+  
+  //"What is the team member's GitHub username?""
+  //"What is the team member's school name?"
+  //"What is the team member's office phone number?"
   //function that will start over if yes chosen, otherwise generate profile
+  
+  
+  //switch cases for intern, engineer, manager responses
+  //if engineer selected, ask for gh un
+  //if intern selected, ask for school
+  //if manager selected, ask for office number
+  
+  //const allEmployees = {
+    //engineer: Engineer.getGithub()
+    //intern: Intern.getSchool()
+    //manager: Manager.getOfficeNum()
+  //}
+  //console.log(allEmployees[role] ? allEmployees[role] : null);
   
 
 }

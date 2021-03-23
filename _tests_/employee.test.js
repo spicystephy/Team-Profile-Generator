@@ -2,7 +2,7 @@ const { test, expect } = require("@jest/globals")
 const { describe } = require("yargs")
 const Employee = require("../lib/Employee")
 
-describe("Emploee", () => {
+describe("Employee", () => {
     describe("Intialization", () => {
         test("Can intialize an employee object", () => {
             const e = new Employee();
