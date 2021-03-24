@@ -19,7 +19,7 @@ Requires jest and inquirer npm
 
 
 ## Usage
-![Instructional Video]()
+[Testing Video](https://youtu.be/oTGF9DnCIZc)
 
 
 ## Testing
