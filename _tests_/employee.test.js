@@ -1,5 +1,4 @@
-const { test, expect } = require("@jest/globals")
-const { describe } = require("yargs")
+
 const Employee = require("../lib/Employee")
 
 describe("Employee", () => {
@@ -13,19 +12,19 @@ describe("Employee", () => {
             const name = "Clark";
             const e = new Employee(name);
 
-            expect(e.name).toBe("name");
+            expect(e.name).toBe(name);
         });
         test("Can set id attribute with constuctor", () => {
             const id = 77;
             const e = new Employee("Nick", id);
 
-            expect(e.id).toBe("id");
+            expect(e.id).toBe(id);
         });
         test("Can set email attribute with constuctor", () => {
             const email = "something@email.com";
             const e = new Employee("Nick", 77, email);
 
-            expect(e.email).toBe("email");
+            expect(e.email).toBe(email);
         });
     describe("getters", () => {
         test("Can get name via getName() method", () => {
