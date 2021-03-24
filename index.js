@@ -47,18 +47,7 @@ function teamMember() {
           break;
       }
     })
-    // .then((data) => {
-    //   if (data.add) {
-    //     //add info from above to team array
-    //     data.push(teamArr);
-    //     //goes back to prompts
-    //     teamMember();
-    //   } else {
-    //     fs.writeFile(template.html, data.push(teamArr), 
-    //     (err) => (err ? console.log(err) : console.log("Team has been created."))
-    //     )}
-    //   });
-
+  
    // function asking for specific info depending on chosen role
   function specEngineer() {
     inquirer.prompt([
@@ -138,10 +127,6 @@ function teamMember() {
   
      
 //something to render html if confirm is no
-  
-    // const filename =
-  //save information to the file
-  // fs.writeFile(filename, teamMembers(data),
-  //   (err) => (err ? console.log(err) : console.log("Team has been created."));
+  function renderHtml(teamArr)
 
 };
