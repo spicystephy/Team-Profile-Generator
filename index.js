@@ -40,22 +40,26 @@ function teamMember() {
     // function that will start over if confirmed, otherwise generate profile
     .then((data) => {
       if (data.add) {
+        //add info from above to team array
         data.push(teamArr);
+        //goes back to prompts
+        teamMember();
       } else {
         return teamArr;
       }
     })
+    // switch cases for intern, engineer, manager responses
     .then((data) => {
       switch (data.role) {
         case "Engineer":
-          specEngineer(data);
+          specEngineer(data) = new Engineer;
           break;
         case "Intern":
-          specIntern(data);
+          specIntern(data) = new Intern;
           break;
         case "Manager":
-          specManager(data);
-          return teamArr.push(data.role);
+          specManager(data) = new Manager;
+          return teamArr.push(data);
       }
     });
   // const filename =
@@ -63,9 +67,7 @@ function teamMember() {
   // fs.writeFile(filename, teamMembers(data),
   //   (err) => (err ? console.log(err) : console.log("Team has been created."));
 
-  // switch cases for intern, engineer, manager responses
   // function asking for specific info depending on chosen role
-
   function specEngineer() {
     inquirer.prompt([
       {
@@ -94,10 +96,4 @@ function teamMember() {
     ]);
   }
 
-  // const allEmployees = {
-  //   Engineer: Engineer.getGithub(),
-  //   Intern: Intern.getSchool(),
-  //   Manager: Manager.getOfficeNum(),
-  // };
-  // console.log(allEmployees[role] ? allEmployees[role] : null)
 }
